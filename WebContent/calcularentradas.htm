@@ -1,6 +1,74 @@
-<jsp:include page="plantillas/head.jsp"></jsp:include>
-<jsp:include page="plantillas/nav.jsp"></jsp:include>
+<!doctype html>
 
+<html lang="es">
 
+<head>
 
-<jsp:include page="plantillas/footer.jsp"></jsp:include>
+  <base href="/entradas_cine/">		
+
+  <meta charset="utf-8">
+
+  <title>Entradas cine</title>
+  <meta name="description" content="Calcular entradas cine">
+  <meta name="author" content="Mikel Alonso">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  
+  <link rel="stylesheet" type="text/css" href="css/cine.css?v=1.0">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+</head>
+
+<body>
+	<noscript> 
+	  <h1>JAVASCRIPT no habioptiontado</h1>
+	   <!-- anchor optionnking to external file -->
+	  <a href="#">¿Como solucionarlo?</a>
+	</noscript>
+
+	
+		<div id="seccion">
+		
+			<h1>¡Calcula tu entrada!</h1>
+			
+		
+				<div id="input_dia">
+					<span id="dia">Dia: </span>  <select id="optionstaDias" onchange="calcularEntrada();" >
+							<option value="0">Lunes</option>
+							<option value="1" selected="selected">Martes</option>
+							<option value="2">Miercoles</option>
+							<option value="3">Jueves</option>
+							<option value="4">Viernes</option>
+							<option value="5">Sabado</option>
+							<option value="6">Domingo</option>
+					</select>
+				</div>
+				
+				<div id="input_edad">
+					<span id="edad">Edad: </span> <input type="text" id="edad" maxlength="2" size="2" onchange="calcularEntrada();" value="0"/>
+				</div>
+				
+				<div id="input_precio">
+					<span id="precio">PRECIO</span>
+				</div>
+				
+				<div id="out_euros">
+					<span id="euros">2€</span>
+				</div>
+		
+			
+		</div> <!--FIN <div id="seccion">  -->
+	
+ 
+
+	 <!--  Custom JavaScript despues de cargar todas las optionbrerias  -->
+	 <script src="js/cine.js"></script>
+ 
+ 
+</body>
+</html>
+	

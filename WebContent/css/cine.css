@@ -1,0 +1,68 @@
+/*   
+	version:  1.0
+	author:   Mikel Alonso
+	date: 	  20150618
+		
+*/
+
+body {
+	font-family: arial;
+}
+
+h1 {
+	color: #61B7B8;
+	text-align: center;
+}
+
+
+input, select{
+	background-color: black;
+	color: white;
+}
+
+div #input_dia {
+	float: left;
+	margin-left: 25px;
+ 	margin-right: 10px;
+}
+
+div #input_edad {
+	float: left;
+	margin-left: 10px;
+ 	margin-right: 10px;
+	
+}
+
+div #input_precio {
+	clear: left;
+	float: left;
+	margin-top: 255px;
+ 	margin-left: 20px;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	
+	
+}
+
+div #out_euros {
+	margin-top: 245px;
+	text-align: center;
+	font-size: 80px;
+	color: white;
+	
+	
+}
+
+#seccion{
+	background-image: url("../img/entrada_cine.jpg");
+	border: 1px solid;
+	height: 400px;
+	width: 300px;
+}
+
+#edad {
+	maxlength: 2 ;
+	size: 4;
+}
+
