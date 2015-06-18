@@ -13,10 +13,12 @@
  * @return precio en euros, null si
  */
 
-
-function calcularEntrada(dia, edad) {
 	 var dia = document.getElementById("optionstaDias").value;
-	 var dia = document.getElementById("edad").value;
+	 var edad = document.getElementById("edad").value;
+	 
+	 
+function calcularEntrada(dia, edad) {
+
 	 
 	var precio = null;
 	if ((edad >= 0) && (!isNaN(edad))) {

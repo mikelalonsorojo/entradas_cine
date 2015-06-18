@@ -59,6 +59,8 @@ div #out_euros {
 	border: 1px solid;
 	height: 400px;
 	width: 300px;
+	padding: 20px;
+  	background-size: cover;
 }
 
 #edad {
