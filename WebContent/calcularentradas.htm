@@ -31,13 +31,15 @@
 	</noscript>
 
 	
-		<div id="seccion">
-		
-			<h1>¡Calcula tu entrada!</h1>
-			
+		<section>
+			<header>
+				<h1>¡Calcula tu entrada!</h1>
+			</header>
 		
 				<div id="input_dia">
-					<span id="dia">Dia: </span>  <select id="optionstaDias" onchange="calcularEntrada();" >
+					<label id="dia">Dia: </label>
+					
+					<select id="optionstaDias" onchange="calcularEntrada(listaDias.value,edad.value);" >
 							<option value="0">Lunes</option>
 							<option value="1" selected="selected">Martes</option>
 							<option value="2">Miercoles</option>
@@ -49,19 +51,22 @@
 				</div>
 				
 				<div id="input_edad">
-					<span id="edad">Edad: </span> <input type="text" id="edad" maxlength="2" size="2" onchange="calcularEntrada();" value="0"/>
+					<label id="edad">Edad: </label> <input type="text" 
+														id="edad" 
+														maxlength="2" 
+														size="2" 
+														onchange="calcularEntrada(listaDias.value,edad.value);" 
+														onkeypress="return justNumbers(event);" 
+														value="16"/>
 				</div>
 				
-				<div id="input_precio">
-					<span id="precio">PRECIO</span>
-				</div>
-				
-				<div id="out_euros">
-					<span id="euros">2€</span>
-				</div>
+				<footer id="output_precio">
+					<label id="precio">PRECIO</label>
+					<output id="euros" name="euros">2€</output>
+				</footer>
 		
 			
-		</div> <!--FIN <div id="seccion">  -->
+		</section> <!--FIN <div id="seccion">  -->
 	
  
 

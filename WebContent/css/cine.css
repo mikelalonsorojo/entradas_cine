@@ -20,20 +20,21 @@ input, select{
 	color: white;
 }
 
-div #input_dia {
+section #input_dia {
 	float: left;
 	margin-left: 25px;
  	margin-right: 10px;
 }
 
-div #input_edad {
+section #input_edad {
 	float: left;
 	margin-left: 10px;
  	margin-right: 10px;
 	
 }
 
-div #input_precio {
+/*
+footer #input_precio {
 	clear: left;
 	float: left;
 	margin-top: 255px;
@@ -44,8 +45,8 @@ div #input_precio {
 	
 	
 }
-
-div #out_euros {
+*/
+footer #output_precio {
 	margin-top: 245px;
 	text-align: center;
 	font-size: 80px;
@@ -54,7 +55,7 @@ div #out_euros {
 	
 }
 
-#seccion{
+section{
 	background-image: url("../img/entrada_cine.jpg");
 	border: 1px solid;
 	height: 400px;

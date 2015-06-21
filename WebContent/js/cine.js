@@ -1,10 +1,8 @@
-/*****************************************
- 				(PAG 283)
- ******************************************/
+/**************************************************
+ 	Calcular el precio de la entrada	(PAG 283)
+ ***************************************************/
 
 /**
- *
- * 
  * @param dia:
  *            Dia de la semana escrito en minusculas, ej:
  *            ['lunes','martes',...'domingo']
@@ -13,14 +11,15 @@
  * @return precio en euros, null si
  */
 
-	 var dia = document.getElementById("optionstaDias").value;
-	 var edad = document.getElementById("edad").value;
-	 
+//			var opcion = document.getElementById("listaDias").value;
+//			var edad = document.getElementById("edad").value;
+//			console.info("dia seleccionado: " + opcion);
+//			console.info("Edad: " + edad);
 	 
 function calcularEntrada(dia, edad) {
-
-	 
-	var precio = null;
+	var precio = "Error";
+	
+	//validar edad isNumber
 	if ((edad >= 0) && (!isNaN(edad))) {
 		switch (dia) {
 		case 'lunes':
@@ -60,12 +59,15 @@ function calcularEntrada(dia, edad) {
 		case 'domingo':
 			precio = 10;
 			break;
-		default:
-			precio = "El dia o la edad no son correctos";
+
 		}// end switch
-	} else {
-		precio = "El dia o la edad no son correctos";
-	}
-	return precio;
+	}//end !isNan
+	
+	document.getElementById("euros").innerHTML=precio+'€';
 }
 // end:function entradas (dia,edad)
+
+
+function justNumbers(event){				
+	return event.charCode >= 0 && event.charCode <= 99;
+}
